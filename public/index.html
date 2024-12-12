@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Referidos Skolmi</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>¡Recomienda y gana con Skolmi! Ayúdanos a crecer y obtén beneficios exclusivos.</h1>
+    </header>
+
+    <section id="descripcion">
+        <h2>¿Cómo Funciona el Programa de Referidos?</h2>
+        <p>Participar es muy fácil: regístrate, recibe tu enlace único y compártelo con tus amigos. Por cada persona que se registre a través de tu enlace, ganarás recompensas exclusivas. ¡Cuantas más personas invites, más recompensas recibirás!</p>
+    </section>
+
+    <section id="formulario-inscripcion">
+        <h2>Formulario de Inscripción</h2>
+        <form action="/registrar" method="POST">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Número de Contacto (opcional):</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <button type="submit">Regístrate</button>
+        </form>
+    </section>
+
+    <section id="confirmacion">
+        <h2>¡Gracias por Registrarte!</h2>
+        <p>Tu enlace único ha sido generado. Compártelo con tus amigos y empieza a ganar recompensas.</p>
+
+        <div id="enlace">
+            <p>Enlace de referido:</p>
+            <p><a href="https://skolmi.com/referidos/nombre123" target="_blank">skolmi.com/referidos/nombre123</a></p>
+        </div>
+
+        <div id="compartir">
+            <h3>Comparte tu enlace:</h3>
+            <button onclick="window.open('https://wa.me/?text=skolmi.com/referidos/nombre123', '_blank')">Compartir en WhatsApp</button>
+            <button onclick="window.open('mailto:?subject=¡Únete a Skolmi!&body=skolmi.com/referidos/nombre123', '_blank')">Compartir por Correo</button>
+            <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=skolmi.com/referidos/nombre123', '_blank')">Compartir en Facebook</button>
+            <button onclick="window.open('https://twitter.com/intent/tweet?text=skolmi.com/referidos/nombre123', '_blank')">Compartir en Twitter</button>
+        </div>
+
+        <p>Recuerda, por cada persona que se registre a través de tu enlace, ¡ganarás recompensas exclusivas!</p>
+    </section>
+
+    <section id="seguimiento">
+        <h2>Rastrea tus Conversiones</h2>
+        <p>Con tu enlace único, podrás rastrear las conversiones y asegurarte de que tus recompensas se sumen a medida que las personas se registran a través de tu enlace.</p>
+    </section>
+
+    <footer>
+        <h3>¡Regístrate y comienza a ganar!</h3>
+    </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAGNxBtLfkaCdPhbp-mqbD5Dkv_ltW6VVU",
+          authDomain: "skolmi-referidos.firebaseapp.com",
+          projectId: "skolmi-referidos",
+          storageBucket: "skolmi-referidos.firebasestorage.app",
+          messagingSenderId: "840328428796",
+          appId: "1:840328428796:web:45793f79ecc238c1e02b79"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>
