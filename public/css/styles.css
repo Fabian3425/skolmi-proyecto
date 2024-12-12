@@ -1,0 +1,113 @@
+/* Fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e8a8e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1e8a8e;
+    font-weight: 600;
+}
+
+p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Botones */
+button {
+    background-color: #1e8a8e;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #166e72;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Enlace único */
+#enlace {
+    background-color: #e9f9f9;
+    border: 1px solid #1e8a8e;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+#enlace a {
+    color: #1e8a8e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#enlace a:hover {
+    text-decoration: underline;
+}
+
+/* Redes sociales */
+#compartir {
+    text-align: center;
+}
+
+#compartir button {
+    margin: 5px;
+}
+
+footer {
+    background-color: #1e8a8e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}

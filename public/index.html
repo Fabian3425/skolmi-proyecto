@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programa de Referidos Skolmi</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -41,13 +43,40 @@
             <p><a href="https://skolmi.com/referidos/nombre123" target="_blank">skolmi.com/referidos/nombre123</a></p>
         </div>
 
-        <div id="compartir">
-            <h3>Comparte tu enlace:</h3>
-            <button onclick="window.open('https://wa.me/?text=skolmi.com/referidos/nombre123', '_blank')">Compartir en WhatsApp</button>
-            <button onclick="window.open('mailto:?subject=¡Únete a Skolmi!&body=skolmi.com/referidos/nombre123', '_blank')">Compartir por Correo</button>
-            <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=skolmi.com/referidos/nombre123', '_blank')">Compartir en Facebook</button>
-            <button onclick="window.open('https://twitter.com/intent/tweet?text=skolmi.com/referidos/nombre123', '_blank')">Compartir en Twitter</button>
-        </div>
+
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compartir Enlace</title>
+    <!-- Enlace a Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="compartir">
+        <h3>Comparte tu enlace:</h3>
+        <!-- Botón de WhatsApp -->
+        <button onclick="window.open('https://wa.me/?text=skolmi.com/referidos/nombre123', '_blank')">
+            <i class="fab fa-whatsapp" style="color: #25d366; font-size: 24px;"></i>
+        </button>
+        <!-- Botón de Correo -->
+        <button onclick="window.open('mailto:?subject=¡Únete a Skolmi!&body=skolmi.com/referidos/nombre123', '_blank')">
+            <i class="fas fa-envelope" style="color: #333; font-size: 24px;"></i>
+        </button>
+        <!-- Botón de Facebook -->
+        <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=skolmi.com/referidos/nombre123', '_blank')">
+            <i class="fab fa-facebook" style="color: #1877f2; font-size: 24px;"></i>
+        </button>
+        <!-- Botón de Twitter -->
+        <button onclick="window.open('https://twitter.com/intent/tweet?text=skolmi.com/referidos/nombre123', '_blank')">
+            <i class="fab fa-twitter" style="color: #1da1f2; font-size: 24px;"></i>
+        </button>
+    </div>
+</body>
+</html>
+
 
         <p>Recuerda, por cada persona que se registre a través de tu enlace, ¡ganarás recompensas exclusivas!</p>
     </section>
@@ -59,13 +88,18 @@
 
     <footer>
         <h3>¡Regístrate y comienza a ganar!</h3>
+        
     </footer>
+
+    
+
+
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
-      
+
         // Your web app's Firebase configuration
         const firebaseConfig = {
           apiKey: "AIzaSyAGNxBtLfkaCdPhbp-mqbD5Dkv_ltW6VVU",
@@ -75,9 +109,9 @@
           messagingSenderId: "840328428796",
           appId: "1:840328428796:web:45793f79ecc238c1e02b79"
         };
-      
+
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-      </script>
+    </script>
 </body>
 </html>
